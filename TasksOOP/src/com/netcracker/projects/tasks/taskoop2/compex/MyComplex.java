@@ -9,8 +9,6 @@ public class MyComplex {
     double imag;
 
     public MyComplex() {
-        real = 0;
-        imag = 0;
     }
 
     public MyComplex(double real, double imag) {
