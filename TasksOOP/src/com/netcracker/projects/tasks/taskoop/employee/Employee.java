@@ -2,6 +2,8 @@ package com.netcracker.projects.tasks.taskoop.employee;
 
 import com.netcracker.projects.validation.Validation;
 
+import java.util.Objects;
+
 public class Employee {
     private int id;
     private String firstName;
@@ -52,9 +54,8 @@ public class Employee {
 
     public int raiseSalary(int percent) {
         Validation.validate(percent);
-        int increaseSalary = (int) (getSalary() + getSalary() * (double) percent / 100);
 
-        return increaseSalary;
+        return (int) (getSalary() + getSalary() * (double) percent / 100);
     }
 
     public String toString() {
@@ -63,5 +64,25 @@ public class Employee {
                 ", name=" + getName() +
                 ", salary=" + salary +
                 ']';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Employee employee = (Employee) o;
+        return id == employee.id && salary == employee.salary && firstName.equals(employee.firstName)
+                && lastName.equals(employee.lastName);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = 17;
+        result = 31 * result + id;
+        result = 31 * result + firstName.hashCode();
+        result = 31 * result + lastName.hashCode();
+        result = 31 * result + salary;
+
+        return result;
     }
 }

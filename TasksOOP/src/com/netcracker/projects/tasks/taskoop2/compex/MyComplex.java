@@ -3,6 +3,7 @@ package com.netcracker.projects.tasks.taskoop2.compex;
 import com.netcracker.projects.operation.Operation;
 
 import java.util.InputMismatchException;
+import java.util.Objects;
 
 public class MyComplex {
     double real;
@@ -114,5 +115,18 @@ public class MyComplex {
     public MyComplex conjugate() {
         MyComplex complexConjugate = new MyComplex(this.real, (-1) * this.imag);
         return complexConjugate;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        MyComplex myComplex = (MyComplex) o;
+        return Double.compare(myComplex.real, real) == 0 && Double.compare(myComplex.imag, imag) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(real, imag);
     }
 }

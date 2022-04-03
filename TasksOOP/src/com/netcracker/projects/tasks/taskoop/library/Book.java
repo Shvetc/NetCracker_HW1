@@ -2,6 +2,9 @@ package com.netcracker.projects.tasks.taskoop.library;
 
 import com.netcracker.projects.validation.Validation;
 
+import java.util.Arrays;
+import java.util.Objects;
+
 public class Book {
     protected String name;
     protected Author[] authors;
@@ -75,4 +78,19 @@ public class Book {
                 ']';
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return Double.compare(book.price, price) == 0 && qty == book.qty
+                && name.equals(book.name) && Arrays.equals(authors, book.authors);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(name, price, qty);
+        result = 31 * result + Arrays.hashCode(authors);
+        return result;
+    }
 }

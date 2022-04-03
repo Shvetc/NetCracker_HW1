@@ -1,5 +1,7 @@
 package com.netcracker.projects.tasks.taskoop.geomFigures;
 
+import java.util.Objects;
+
 public class MyPoint {
     private double x;
     private double y;
@@ -58,5 +60,21 @@ public class MyPoint {
 
     public double distance() {
         return distance(0, 0);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        MyPoint myPoint = (MyPoint) o;
+        return Double.compare(myPoint.x, x) == 0 && Double.compare(myPoint.y, y) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = 17;
+        result = 31 * result + (int) x;
+        result = 31 * result + (int) y;
+        return result;
     }
 }

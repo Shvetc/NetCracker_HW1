@@ -2,6 +2,8 @@ package com.netcracker.projects.tasks.taskoop.geomFigures;
 
 import com.netcracker.projects.validation.Validation;
 
+import java.util.Objects;
+
 public class Circle implements BaseFigure {
     private double radius;
     private String color;
@@ -54,5 +56,22 @@ public class Circle implements BaseFigure {
                 "radius=" + radius +
                 ", color=" + color + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Circle circle = (Circle) o;
+        return Double.compare(circle.radius, radius) == 0 && color.equals(circle.color);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = 17;
+        result = 31 * result + (int) radius;
+        result = 31 * result + color.hashCode();
+
+        return result;
     }
 }

@@ -3,6 +3,9 @@ package com.netcracker.projects.tasks.taskoop.geomFigures;
 import com.netcracker.projects.operation.Operation;
 import com.netcracker.projects.validation.Validation;
 
+import java.util.Arrays;
+import java.util.Objects;
+
 public class MyTriangle {
     private MyPoint v1, v2, v3;
     private double[] sides;
@@ -58,5 +61,21 @@ public class MyTriangle {
         }
 
         return type.Scalene.name();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        MyTriangle that = (MyTriangle) o;
+        return Objects.equals(v1, that.v1) && Objects.equals(v2, that.v2)
+                && Objects.equals(v3, that.v3) && Arrays.equals(sides, that.sides);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(v1, v2, v3);
+        result = 31 * result + Arrays.hashCode(sides);
+        return result;
     }
 }

@@ -1,5 +1,6 @@
 package com.netcracker.projects.tasks.taskoop2.polynom;
 
+import java.util.Arrays;
 import java.util.InputMismatchException;
 
 public class MyPolynomial {
@@ -104,5 +105,18 @@ public class MyPolynomial {
         }
         MyPolynomial aNewPolynomial = new MyPolynomial(aNewCoeffs);
         return aNewPolynomial;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        MyPolynomial that = (MyPolynomial) o;
+        return Arrays.equals(coeffs, that.coeffs);
+    }
+
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(coeffs);
     }
 }
