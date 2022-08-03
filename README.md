@@ -151,39 +151,47 @@ In the class containing the main method, it is necessary to test the functionali
 
 
 *********************************************************
-[Chapter 1: FUNDAMENTAL PROGRAMMING STRUCTURES](https://github.com/ElizbethK/Hometask2/tree/main/project2/chapter1)
+[Chapter 1: FUNDAMENTAL PROGRAMMING STRUCTURES](https://github.com/Shvetc/NetCracker_HW1/tree/main/TasksOOP/src/com/netcracker/projects/tasks/horstmann/chapter1)
 
 *********************************************************
 
-[ex.2:](https://github.com/Shvetc/NetCracker_HW1/blob/main/TasksOOP/src/com/netcracker/projects/tasks/horstmann/chapter1/Normalization.java)
+[ex.2](https://github.com/Shvetc/NetCracker_HW1/blob/main/TasksOOP/src/com/netcracker/projects/tasks/horstmann/chapter1/Normalization.java)
+
+[Main ex.2 class](https://github.com/Shvetc/NetCracker_HW1/blob/main/TasksOOP/src/com/netcracker/projects/tasks/horstmann/MainEx2.java)
+
 Write a program that reads an integer angle (which may be positive or
 negative) and normalizes it to a value between 0 and 359 degrees. Try
 it first with the % operator, then with floorMod.
 
-
+                                           ___________________________________
+                                           
 [ex.6:](https://github.com/Shvetc/NetCracker_HW1/blob/main/TasksOOP/src/com/netcracker/projects/tasks/horstmann/chapter1/Ex6.java)
 Write a program that computes the factorial n! = 1 × 2 × . . . × n, using
 BigInteger. Compute the factorial of 1000.
 
-
-
+                                           ___________________________________
+                                           
 [ex.8:](https://github.com/Shvetc/NetCracker_HW1/blob/main/TasksOOP/src/com/netcracker/projects/tasks/horstmann/chapter1/Ex8.java)
 Write a program that reads a string and prints all of its nonempty
 substrings.
 
+                                           ___________________________________
+                                           
+[ex.13: Lottery class](https://github.com/Shvetc/NetCracker_HW1/blob/main/TasksOOP/src/com/netcracker/projects/tasks/horstmann/chapter1/Lottery.java)
 
+[Main Lottery class](https://github.com/Shvetc/NetCracker_HW1/blob/main/TasksOOP/src/com/netcracker/projects/tasks/horstmann/MainEx13.java)
 
-[ex.13:](https://github.com/Shvetc/NetCracker_HW1/blob/main/TasksOOP/src/com/netcracker/projects/tasks/horstmann/chapter1/Lottery.java)
-[Main](https://github.com/Shvetc/NetCracker_HW1/blob/main/TasksOOP/src/com/netcracker/projects/tasks/horstmann/MainEx13.java)
 Write a program that prints a lottery combination, picking six distinct
 numbers between 1 and 49. To pick six distinct numbers, start with an
 array list filled with 1...49. Pick a random index and remove the element.
 Repeat six times. Print the result in sorted order.
 
+                                           ___________________________________
+                                           
+[ex.14: MiagicSquare class](https://github.com/Shvetc/NetCracker_HW1/blob/main/TasksOOP/src/com/netcracker/projects/tasks/horstmann/chapter1/MagicSquare.java)
 
+[Main MagicSquare class](https://github.com/Shvetc/NetCracker_HW1/blob/main/TasksOOP/src/com/netcracker/projects/tasks/horstmann/MainEx14.java)
 
-[ex.14:](https://github.com/Shvetc/NetCracker_HW1/blob/main/TasksOOP/src/com/netcracker/projects/tasks/horstmann/chapter1/MagicSquare.java)
-[Main](https://github.com/Shvetc/NetCracker_HW1/blob/main/TasksOOP/src/com/netcracker/projects/tasks/horstmann/MainEx14.java)
 Write a program that reads a two-dimensional array of integers and determines whether it is a magic square (that is, whether the sum of all
 rows, all columns, and the diagonals is the same). Accept lines of input
 that you break up into individual integers, and stop when the user enters
@@ -205,7 +213,7 @@ your program should respond affirmatively.
 
 *********************************************************
 
-[Chapter 2: OBJECT-ORIENTED PROGRAMMING](https://github.com/ElizbethK/Hometask2/tree/main/project2/chapter2)
+[Chapter 2: OBJECT-ORIENTED PROGRAMMING](https://github.com/Shvetc/NetCracker_HW1/tree/main/TasksOOP/src/com/netcracker/projects/tasks/horstmann/chapter2)
 
 *********************************************************
 
@@ -219,14 +227,21 @@ methods so that they return new points with the results. For example,
 Point p = new Point(3, 4).translate(1, 3).scale(0.5);
 should set p to a point with coordinates (2, 3.5).
 
+                                           ___________________________________
+                                           
 
-[ex.9:](https://github.com/Shvetc/NetCracker_HW1/blob/main/TasksOOP/src/com/netcracker/projects/tasks/horstmann/chapter2/Car.java)
+[ex.9: Car class](https://github.com/Shvetc/NetCracker_HW1/blob/main/TasksOOP/src/com/netcracker/projects/tasks/horstmann/chapter2/Car.java)
+
+[Main Car class](https://github.com/Shvetc/NetCracker_HW1/blob/main/TasksOOP/src/com/netcracker/projects/tasks/horstmann/MainCar.java)
+
 Implement a class Car that models a car traveling along the x-axis, consuming gas as it moves. Provide methods to drive by a given number of
 miles, to add a given number of gallons to the gas tank, and to get the
 current distance from the origin and fuel level. Specify the fuel efficiency
 (in miles/gallons) in the constructor. Should this be an immutable class?
 Why or why not
 
+                                           ___________________________________
+                                           
 
 [ex.13:](https://github.com/Shvetc/NetCracker_HW1/blob/main/TasksOOP/src/com/netcracker/projects/tasks/horstmann/chapter2/Ex13.java)
 Download the JAR file for OpenCSV from http://opencsv.sourceforge.net. Write
@@ -241,27 +256,48 @@ to practice using a library that is delivered as a JAR file.
 
 
 *********************************************************
-[Chapter 3: INTERFACES AND LAMBDA EXPRESSIONS](https://github.com/ElizbethK/Hometask2/tree/main/project2/chapter3)
+[Chapter 3: INTERFACES AND LAMBDA EXPRESSIONS](https://github.com/Shvetc/NetCracker_HW1/tree/main/TasksOOP/src/com/netcracker/projects/tasks/horstmann/chapter3)
 
 *********************************************************
 
-[ex.1:](https://github.com/ElizbethK/Hometask2/blob/main/project2/chapter3/Measurable.java)
+[ex.1: Employee class](https://github.com/Shvetc/NetCracker_HW1/blob/main/TasksOOP/src/com/netcracker/projects/tasks/horstmann/chapter3/Employee.java)
+
+[Main Employee class](https://github.com/Shvetc/NetCracker_HW1/blob/main/TasksOOP/src/com/netcracker/projects/tasks/horstmann/MainEmployee.java)
+
 Provide an interface Measurable with a method double getMeasure() that measures an object in some way. Make Employee implement Measurable. Provide
 a method double average(Measurable[] objects) that computes the average
 measure. Use it to compute the average salary of an array of employees.
 
-[ex.2:](https://github.com/ElizbethK/Hometask2/blob/main/project2/chapter3/Measurable.java)
+                                           ___________________________________
+                                           
+
+[ex.2: Employee class](https://github.com/Shvetc/NetCracker_HW1/blob/main/TasksOOP/src/com/netcracker/projects/tasks/horstmann/chapter3/Employee.java)
+
+[Main Employee class](https://github.com/Shvetc/NetCracker_HW1/blob/main/TasksOOP/src/com/netcracker/projects/tasks/horstmann/MainEmployee.java)
+
 Continue with the preceding exercise and provide a method Measurable
 largest(Measurable[] objects). Use it to find the name of the employee with
 the largest salary. Why do you need a cast?
 
-[ex.4:](https://github.com/ElizbethK/Hometask2/blob/main/project2/chapter3/IntSequence.java)
+                                           ___________________________________
+                                           
+
+[ex.4: IntSequence class](https://github.com/Shvetc/NetCracker_HW1/blob/main/TasksOOP/src/com/netcracker/projects/tasks/horstmann/chapter3/IntSequence.java)
+
+[IntSequanceable interface](https://github.com/Shvetc/NetCracker_HW1/blob/main/TasksOOP/src/com/netcracker/projects/tasks/horstmann/chapter3/IntSequanceable.java)
+
+[Main IntSequence class](https://github.com/Shvetc/NetCracker_HW1/blob/main/TasksOOP/src/com/netcracker/projects/tasks/horstmann/MainIntSequence.java)
+
+
 Implement a static of method of the IntSequence class that yields a sequence
 with the arguments. For example, IntSequence.of(3, 1, 4, 1, 5, 9) yields a
 sequence with six values. Extra credit if you return an instance of an
 anonymous inner class.
 
-[ex.5:](https://github.com/ElizbethK/Hometask2/blob/main/project2/chapter3/IntSequence.java)
+                                           ___________________________________
+                                           
+
+[ex.5: Measurable class](https://github.com/Shvetc/NetCracker_HW1/blob/main/TasksOOP/src/com/netcracker/projects/tasks/horstmann/chapter3/Measurable.java)
 Add a static method with the name constant of the IntSequence class that
 yields an infinite constant sequence. For example, IntSequence.constant(1)
 yields values 1 1 1..., ad infinitum. Extra credit if you do this with a
